@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openai-functions_AEOLIN"
+version = "0.0.1"
+authors = [{ name = "Aeolin Ferjünnoz", email = "aeolin@aeol.in"}]
+description = "OpenAI wrapper around function calls"
+readme = "README.md"
+requires-python = ">=3.8.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: WTFPL",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "openai",
+    "pydantic",
+    "tiktoken"
+]
