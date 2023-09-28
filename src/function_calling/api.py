@@ -1,7 +1,6 @@
 import openai
-from openai.openai_response import OpenAIResponse
-from function_calling import ChatHistory, ChatRole, ChatMessage
-from typing import List, Union, Any, Callable
+from function_calling.models import ChatHistory, ChatRole, ChatMessage
+from typing import List, Any, Callable
 import sys
 
 

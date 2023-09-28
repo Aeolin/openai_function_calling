@@ -1,6 +1,6 @@
 import json
 from enum import Enum
-from typing import List, Union, Any
+from typing import List, Union, Any, Callable
 
 import tiktoken
 from pydantic import TypeAdapter, Field
@@ -78,11 +78,11 @@ def description(*args, **kwargs):
 
 
 class ChatHistory:
-    def __init__(self, model: str, max_tokens: int, functions: List[CallableFunction]):
+    def __init__(self, model: str, max_tokens: int, functions: List[Callable]):
         self.messages = []
         self.model = model
         self.tokenizer = tiktoken.encoding_for_model(model)
-        self.functions = {func.name: func for func in functions}
+        self.functions = {func.__name__: CallableFunction(func) for func in functions}
         self.max_tokens = max_tokens
         self.token_bias = 0
 

@@ -3,19 +3,22 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "openai-functions_AEOLIN"
-version = "0.0.1"
+name = "openai-function-calling-aeolin"
+version = "0.0.6"
 authors = [{ name = "Aeolin Ferjünnoz", email = "aeolin@aeol.in"}]
 description = "OpenAI wrapper around function calls"
 readme = "README.md"
 requires-python = ">=3.8.0"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: WTFPL",
+    "License :: Public Domain",
     "Operating System :: OS Independent"
 ]
 dependencies = [
-    "openai",
-    "pydantic",
-    "tiktoken"
+    "openai>=0.28.1",
+    "pydantic>=2.4.0",
+    "tiktoken>=0.5.1"
 ]
+
+[project.urls]
+Homepage = "https://github.com/Aeolin/openai_function_calling.git"
