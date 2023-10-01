@@ -7,7 +7,8 @@ Is a simple library which adds convenience methods to query open ai's chat endpo
 ## Basic Usage Example
 ```python
 from typing import Any
-from function_calling import setup_api, get_chat_compmetion, ChatHistory, ChatRole, description
+from function_calling import setup_api, get_chat_completion, ChatHistory, ChatRole, description
+import random
 
 def to_string(obj: Any) -> str:
     return str(obj) 
