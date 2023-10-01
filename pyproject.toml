@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "openai-function-calling-aeolin"
-version = "0.0.6"
+version = "0.0.7"
 authors = [{ name = "Aeolin Ferjünnoz", email = "aeolin@aeol.in"}]
 description = "OpenAI wrapper around function calls"
 readme = "README.md"

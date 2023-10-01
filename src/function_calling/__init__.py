@@ -1,3 +1,3 @@
-__version__ = "0.0.6"
+__version__ = "0.0.7"
 from function_calling.models import *
 from function_calling.api import *

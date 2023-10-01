@@ -14,11 +14,11 @@ class ChatRole(Enum):
 
 
 class ChatMessage:
-    def __init__(self, content: str, role: ChatRole, token_count: int, ephermal: bool = True):
+    def __init__(self, content: str, role: ChatRole, token_count: int, ephemeral: bool = True):
         self.content = content
         self.role = role
         self.token_count = token_count
-        self.ephermal = ephermal
+        self.ephemeral = ephemeral
 
     def to_dict(self):
         return {
